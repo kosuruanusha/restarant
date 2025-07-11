@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FantasyXI offers live casino, sports, and fantasy gaming. Join now for exclusive rewards.">
+  <meta name="keywords" content="casino, fantasy sports, betting, live games">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" href="favicon.ico">
+  <title>FantasyXI - Home</title>
+  <link rel="stylesheet" href="home4.css">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+</head>
+
+<body>
+  <div id="progressBar"></div>
+  <header class="navbar">
+    <div class="logo animate__animated animate__fadeInLeft"><span>Fantasy</span>XI</div>
+    <div class="menu-toggle">
+      <i class="fas fa-bars" aria-label="Toggle navigation"></i>
+    </div>
+    <nav class="nav-links">
+      <a href="#" class="nav-link animate__animated animate__fadeIn" aria-label="Home">
+        <i class="fas fa-home"></i> Home
+      </a>
+      <div class="dropdown">
+        <a href="#" id="sportsToggle" class="drop-link animate__animated animate__fadeIn" aria-haspopup="true">
+          <i class="fas fa-running"></i> Sports <i class="fa fa-caret-down"></i>
+        </a>
+        <ul class="dropdown-content" id="sportsDropdown">
+          <li><a href="#"><i class="fas fa-baseball-ball"></i> Cricket</a></li>
+          <li><a href="#"><i class="fas fa-futbol"></i> Football</a></li>
+          <li><a href="#"><i class="fas fa-basketball-ball"></i> Basketball</a></li>
+          <li><a href="#"><i class="fas fa-hockey-puck"></i> Hockey</a></li>
+        </ul>
+      </div>
+      <div class="dropdown">
+        <a href="#" id="matchesToggle" class="drop-link animate__animated animate__fadeIn" aria-haspopup="true">
+          <i class="fas fa-tv"></i> Live Matches <i class="fa fa-caret-down"></i>
+        </a>
+        <ul class="dropdown-content" id="matchesDropdown">
+          <li><a href="#"><i class="far fa-calendar-alt"></i> Today's Matches</a></li>
+          <li><a href="#"><i class="fas fa-clock"></i> Upcoming</a></li>
+          <li><a href="#"><i class="fas fa-poll"></i> Results</a></li>
+          <li><a href="#"><i class="fas fa-play-circle"></i> Highlights</a></li>
+        </ul>
+      </div>
+      <a href="#" class="animate__animated animate__fadeIn">Color Trading</a>
+      <a href="#" class="animate__animated animate__fadeIn">Casino</a>
+      <a href="#" class="animate__animated animate__fadeIn">User Panel</a>
+    </nav>
+    <div class="icons">
+      <div class="dropdown">
+        <img src="wallet.webp" class="icon pulse" id="walletIcon" alt="Wallet Icon" loading="lazy">
+        <ul class="dropdown-content" id="walletDropdown">
+          <li><a href="#"><i class="fas fa-wallet"></i> Balance</a></li>
+          <li><a href="#"><i class="fas fa-money-bill-wave"></i> Deposit</a></li>
+          <li><a href="#"><i class="fas fa-hand-holding-usd"></i> Withdraw</a></li>
+        </ul>
+      </div>
+      <div class="dropdown">
+        <img src="profile.webp" class="icon" id="profileIcon" alt="User Icon">
+        <ul class="dropdown-content" id="profileDropdown">
+          <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+          <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+          <li><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+        </ul>
+      </div>
+      <button class="sign-in animate__animated animate__fadeIn" onclick='location.href="login2.html"' aria-label="Sign In">
+        <i class="fas fa-sign-in-alt"></i> SIGN IN
+      </button>
+      <button class="register animate__animated animate__fadeIn" onclick='location.href="register2.html"' aria-label="Register">
+        <i class="fas fa-user-plus"></i> REGISTER
+      </button>
+    </div>
+  </header>
+  <div class="live-section animate__animated animate__fadeIn">
+    <h3 class=title>Live Matches</h3>
+   <div class="live-card">
+  <img src="cricketteam.webp" id="fetchLiveMatch" style="cursor:pointer;" alt="Live Match"  />
+
+  <div class="live-info">
+    <span class="live-badge"><i class="fas fa-circle"></i> LIVE Match</span>
+    <span class="live-score"><i class="fas fa-circle"></i> IND 145/3 (16.2 ov) vs AUS</span>
+    
+  </div>
+
+  <div id="liveMatchDetails" class="live-match-details"></div>
+  
+</div>
+
+  </div>
+  <div class="schedule-section animate__animated animate__fadeIn">
+    <div class=schedule-header>
+      <h3><i class="fas fa-futbol"></i> Cricket Match</h3>
+      <div class=schedule-right>
+        <span class=year>2025 <strong>Schedule</strong></span>
+        <i class="fas fa-list"></i>
+      </div>
+    </div>
+    <div class=tabs>
+    <button type="button" class="active">Latest Match</button>
+      <button>Coming Match</button>
+      <button>Pre-season</button>
+      <button>Live Games</button>
+      <button>Fun Football</button>
+    </div>
+    <div class=match-list>
+      <div class=match-row>
+        <span class=team><img src="flagg.webp" alt=Argentina> Argentina</span>
+        <span class=score>1 - 2</span>
+        <span class=team><img src="flagg.webp" alt=Italy> Italy</span>
+        <span class=status>Full Time</span>
+        <span class=date>18 March 2025</span>
+        <span class=icons><i class="far fa-clock"></i> <i class="fas fa-share-alt"></i></span>
+      </div>
+      <div class=match-row>
+        <span class=team><img src="flagg.webp" alt=Argentina> Argentina</span>
+        <span class=score>1 - 2</span>
+        <span class=team><img src="flagg.webp" alt=Italy> Italy</span>
+        <span class=status>Full Time</span>
+        <span class=date>18 March 2025</span>
+        <span class=icons><i class="far fa-clock"></i> <i class="fas fa-share-alt"></i></span>
+      </div>
+      <div class=match-row>
+        <span class=team><img src="flagg.webp" alt=Argentina> Argentina</span>
+        <span class=score>1 - 2</span>
+        <span class=team><img src="flagg.webp" alt=Italy> Italy</span>
+        <span class=status>Full Time</span>
+        <span class=date>18 March 2025</span>
+        <span class=icons><i class="far fa-clock"></i> <i class="fas fa-share-alt"></i></span>
+      </div>
+      <div class=match-row>
+        <span class=team><img src="flagg.webp" alt=Argentina> Argentina</span>
+        <span class=score>1 - 2</span>
+        <span class=team><img src="flagg.webp" alt=Italy> Italy</span>
+        <span class=status>Full Time</span>
+        <span class=date>18 March 2025</span>
+        <span class=icons><i class="far fa-clock"></i> <i class="fas fa-share-alt"></i></span>
+      </div>
+      <div class=match-row>
+        <span class=team><img src="flagg.webp" alt=Argentina> Argentina</span>
+        <span class=score>1 - 2</span>
+        <span class=team><img src="flagg.webp" alt=Italy> Italy</span>
+        <span class=status>Full Time</span>
+        <span class=date>18 March 2025</span>
+        <span class=icons><i class="far fa-clock"></i> <i class="fas fa-share-alt"></i></span>
+      </div>
+    </div>
+  </div>
+  <section class="card-section animate__animated animate__fadeIn">
+    <div class=card-container>
+      <div class="card casino">
+        <div class=card-content>
+          <h3><i class="fa-solid fa-dice"></i> Casino</h3>
+          <p>Enjoy the most elite range of live casino games. Dare to test skills in a super arena of thrill, stakes and
+            tricks.</p>
+        </div>
+        <div class=card-buttons>
+         <button class="btn btn-yelloww" id="openn">Casino</button>
+
+          <button class="btn btn-dark" >Live Casino</button>
+        </div>
+      </div>
+      <div class="card sport">
+        <div class=card-content>
+          <h3><i class="fa-solid fa-football-helmet"></i> Sport</h3>
+          <p>Join in with elite range of all sports games. Test expert skill shots in super arenas of thrill, tension
+            and stakes.</p>
+        </div>
+        <div class=card-buttons>
+          <button class="btn btn-yellown" id="openi">Casino</button>
+          <button class="btn btn-dark">Live Casino</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="casino-section-alt animate__animated animate__fadeIn">
+  <div class="section-headerr">
+    <h2>Casino</h2>
+    <div class="header-rightt">
+      <button class="all-games-btn-alt">All Games</button>
+      <button class="arrow-btn-alt left-alt"><i class="fas fa-chevron-left"></i></button>
+      <button class="arrow-btn-alt right-alt"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </div>
+
+  <div class="game-carousel-alt" id="gameCarouselAlt">
+    <div class="game-card">
+      <img src="safari1.webp" alt="Lady Goddess" loading="lazy">
+      <p>MEASTIC SAFARI</p>
+    </div>
+    <div class="game-card">
+      <img src="fruit.webp" alt="King Stroke" loading="lazy">
+      <p>FRUIT BLAZE</p>
+    </div>
+    <div class="game-card">
+      <img src="zulu.webp" alt="Moon Quest" loading="lazy">
+      <p>ZULU GOLD</p>
+    </div>
+    <div class="game-card">
+      <img src="dead.webp" alt="Wild Safari" loading="lazy">
+      <p>GREEK LEGENDERS</p>
+    </div>
+    <div class="game-card">
+      <img src="fruit.webp" alt="Fruit Craze" loading="lazy">
+      <p>DAY OF DEAD</p>
+    </div>
+    <div class="game-card">
+      <img src="zulu.webp" alt="Zulu Warrior" loading="lazy">
+      <p>ZULU WARRIOR</p>
+    </div>
+  </div>
+</section>
+  
+  <section class="casino-section animate__animated animate__fadeIn">
+  <div class="section-header">
+    <h2>All Games</h2>
+    <div class="header-rightt">
+      <button class="all-games-btn">All Games</button>
+      <button class="arrow-btn left"><i class="fas fa-chevron-left"></i></button>
+      <button class="arrow-btn right"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </div>
+  <div class="game-carousel" id="gameCarousel3">
+    <div class="game-card"><img src="lady.webp" alt="Zulu Warrior" loading="lazy"><p>LADY GODDESS</p></div>
+    <div class="game-card"><img src="diomond.webp" alt="Zulu Warrior" loading="lazy"><p>KING STROKE</p></div>
+    <div class="game-card"><img src="moon.webp" alt="Zulu Warrior" loading="lazy"><p>MOON QUEST</p></div>
+    <div class="game-card"><img src="king.webp" alt="Zulu Warrior" loading="lazy"><p>WILD SAFARI</p></div>
+    <div class="game-card"><img src="diomond.webp"alt="Zulu Warrior" loading="lazy"><p>FRUIT CRAZE</p></div>
+    <div class="game-card"><img src="greek.webp" alt="Zulu Warrior" loading="lazy"><p>ZULU WARRIOR</p></div>
+  </div>
+</section>
+
+  <footer class=footer>
+    <div class=footer-top>
+      <div class=footer-left>
+        <h2>FantasyXI</h2>
+        <p>
+          Are you looking for the best casino games and the biggest bonuses on the market?<br>
+          CasinoCompare is looking out for you. We have tried and tested most casinos on the Canadian market so you have
+          the choice of only the most trustworthy and fun places to bet your money.<br>
+          Keep up with our news and updates to make the most of your online casino experience!
+        </p>
+        <button class=support-btn>Support</button>
+      </div>
+      <div class=footer-links>
+        <div>
+          <h4>Information</h4>
+          <ul>
+            <li><a href=#>About</a></li>
+            <li><a href=#>Contact Us</a></li>
+            <li><a href=#>Pricing</a></li>
+            <li><a href=#>Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Popular pages</h4>
+          <ul>
+            <li><a href=#>Live Casino</a></li>
+            <li><a href=#>Game Shows</a></li>
+            <li><a href=#>No Bonus</a></li>
+            <li><a href=#>Casino Payment</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Popular casinos</h4>
+          <ul>
+            <li><a href=#>Live Casino</a></li>
+            <li><a href=#>Game Shows</a></li>
+            <li><a href=#>No Bonus</a></li>
+            <li><a href=#>Casino Payment</a></li>
+          </ul>
+        </div>
+        <div class=footer-social>
+          <h4>Follow Us-</h4>
+          <div class=social-icons>
+            <a href=https://www.youtube.com/ target=_blank><i class="fab fa-youtube"></i></a>
+            <a href=https://twitter.com/ target=_blank><i class="fab fa-twitter"></i></a>
+            <a href=https://facebook.com/ target=_blank><i class="fab fa-facebook"></i></a>
+          </div>
+          <h4>Subscribe Now</h4>
+          <div class=subscribe-box>
+            <input type=email placeholder="Enter your email">
+            <button><i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class=footer-bottom>
+      <p>
+        CasinoCompare.ca is owned by Game Lounge Ltd, a Maltese company with organization number: C53144 and is
+        completely independent of the gaming companies. Please note that third parties reserve the right to change or
+        remove bonuses / promotions at short notice. canadacasino.ca can therefore not be held responsible for any
+        incorrect information. Always read the terms and conditions of the bonus at each casino carefully before
+        playing.
+      </p>
+    </div>
+  </footer>
+  <script src="home4.js" ></script>
+ 
+
+</body>
+
+</html>

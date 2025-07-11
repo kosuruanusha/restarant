@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Online bookstore with wide selection of books">
+    <meta name="keywords" content="books, bookstore, novels, ebooks, bestsellers">
+    <title>BookHaven - Your Online Bookstore</title>
+    <link rel="stylesheet" href="book.css">
+    <link rel="stylesheet" href="response.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://thumbs.dreamstime.com/b/hand-book-logo-illustration-art-background-43965136.jpg" alt="BookHaven Logo" width="180" height="50" loading="lazy">
+                </a>
+            </div>
+            <div class="search-bar">
+                <form id="search-form">
+                    <input type="text" id="search-input" placeholder="Search books, authors, genres...">
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#featured">Featured</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#bestsellers">Bestsellers</a></li>
+                    <li><a href="#deals">Deals</a></li>
+                </ul>
+            </nav>
+            <div class="user-actions">
+                <a href="#" id="wishlist-btn"><i class="far fa-heart"></i></a>
+                <a href="#" id="cart-btn"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a>
+                <a href="#" id="user-btn"><i class="far fa-user"></i></a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#featured">Featured</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#bestsellers">Bestsellers</a></li>
+            <li><a href="#deals">Deals</a></li>
+            <li><a href="#" id="mobile-wishlist">Wishlist</a></li>
+            <li><a href="#" id="mobile-cart">Cart</a></li>
+            <li><a href="#" id="mobile-account">Account</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Discover Your Next Favorite Book</h1>
+                <p>Explore our collection of over 100,000 titles across all genres</p>
+                <a href="#featured" class="btn btn-primary">Browse Collection</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Books Section -->
+    <section id="featured" class="featured-books">
+        <div class="container">
+            <h2 class="section-title">Featured Books</h2>
+            <div class="books-grid" id="featured-books-grid">
+                <!-- Books will be loaded dynamically with JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories">
+        <div class="container">
+            <h2 class="section-title">Browse by Category</h2>
+            <div class="categories-grid">
+                <div class="category-card">
+                    <img src="https://media.istockphoto.com/id/1279460648/photo/concept-of-an-open-magic-book-open-pages-with-water-and-land-and-small-child-fantasy-nature.jpg?s=612x612&w=0&k=20&c=yK_dL8T7CjeYpNTvkXecPxQDDw9WczC8FB9bCO2McOw=" alt="Fiction" loading="lazy">
+                    <h3>Fiction</h3>
+                </div>
+                <div class="category-card">
+                    <img src="https://www.mrspl.org/sites/default/files/styles/blog_featured_item_image/public/2024-12/2024%20Most%20Popular%20Books%20-%20NONFICTION.png?itok=m9jGQgSm" alt="Non-Fiction" loading="lazy">
+                    <h3>Non-Fiction</h3>
+                </div>
+                <div class="category-card">
+                    <img src="https://m.media-amazon.com/images/I/41aqZYu1ZaL._UF1000,1000_QL80_.jpg" alt="Science Fiction" loading="lazy">
+                    <h3>Science Fiction</h3>
+                </div>
+                <div class="category-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5TSxudGQanC8frYNgI1VlboEQ4HIuXqihaKN5j_3i2mDNr_A4RkJ-pgXrMxBUMbEBcdY&usqp=CAU" alt="Romance" loading="lazy">
+                    <h3>Devosional</h3>
+                </div>
+                <div class="category-card">
+                    <img src="https://observer.com/wp-content/uploads/sites/2/2024/04/Best-New-Biographies-and-Memoirs-7.jpg?quality=80" alt="Biography" loading="lazy">
+                    <h3>Biography</h3>
+                </div>
+                <div class="category-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5TSxudGQanC8frYNgI1VlboEQ4HIuXqihaKN5j_3i2mDNr_A4RkJ-pgXrMxBUMbEBcdY&usqp=CAU" alt="Romance" loading="lazy">
+                    <h3>Devosional</h3>
+                </div>
+                <div class="category-card">
+                    <img src="https://observer.com/wp-content/uploads/sites/2/2024/04/Best-New-Biographies-and-Memoirs-7.jpg?quality=80" alt="Biography" loading="lazy">
+                    <h3>Biography</h3>
+                </div>
+                <div class="category-card">
+                    <img src="https://img.buzzfeed.com/buzzfeed-static/static/2020-04/6/18/asset/547de13ad4c2/sub-buzz-1389-1586196831-14.jpg" alt="Mystery" loading="lazy">
+                    <h3>Mystery</h3>
+                </div>
+                <div class="category-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5TSxudGQanC8frYNgI1VlboEQ4HIuXqihaKN5j_3i2mDNr_A4RkJ-pgXrMxBUMbEBcdY&usqp=CAU" alt="Romance" loading="lazy">
+                    <h3>Devosional</h3>
+                </div>
+                <div class="category-card">
+                    <img src="https://observer.com/wp-content/uploads/sites/2/2024/04/Best-New-Biographies-and-Memoirs-7.jpg?quality=80" alt="Biography" loading="lazy">
+                    <h3>Biography</h3>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Bestsellers Section -->
+    <section id="bestsellers" class="bestsellers">
+        <div class="container">
+            <h2 class="section-title">Bestsellers</h2>
+            <div class="books-grid" id="bestsellers-grid">
+                <!-- Books will be loaded dynamically with JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Deals Section -->
+    <section id="deals" class="deals">
+        <div class="container">
+            <h2 class="section-title">Special Deals</h2>
+            <div class="deals-carousel">
+                <div class="deal-card">
+                    <div class="deal-badge">50% OFF</div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhrxbiLpx-2UIleLE7tyaSw40172tyw1s1DQ&s" alt="Deal Book 1" loading="lazy">
+                    <h3>Summer Reading Sale</h3>
+                    <p>Selected titles at half price. Limited time offer!</p>
+                    <a href="#" class="btn btn-secondary">Shop Now</a>
+                </div>
+                <div class="deal-card">
+                    <div class="deal-badge">BUY 2 GET 1 FREE</div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPAMrfprKN2oR78QPYkwar5tH8xwoSahVbuQ&s" alt="Deal Book 2" loading="lazy">
+                    <h3>Bestseller Bundle</h3>
+                    <p>Buy any 2 bestsellers, get 1 free of equal or lesser value</p>
+                    <a href="#" class="btn btn-secondary">Shop Now</a>
+                </div>
+                <div class="deal-card">
+                    <div class="deal-badge">FREE SHIPPING</div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlFptO72RLlHMYZTyr8Z03wZ15mNdiB62Ieg&s" alt="Deal Book 3" loading="lazy">
+                    <h3>Free Shipping Weekend</h3>
+                    <p>All orders over $25 ship free this weekend only</p>
+                    <a href="#" class="btn btn-secondary">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter for the latest releases and exclusive offers</p>
+                <form id="newsletter-form">
+                    <input type="email" id="newsletter-email" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>BookHaven</h3>
+                    <p>Your one-stop destination for all your reading needs since 2010.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">New Releases</a></li>
+                        <li><a href="#">Coming Soon</a></li>
+                        <li><a href="#">Authors</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Book Street, Reading, USA</li>
+                        <li><i class="fas fa-phone"></i> (123) 456-7890</li>
+                        <li><i class="fas fa-envelope"></i> info@bookhaven.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 BookHaven. All Rights Reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Cart items will be loaded dynamically -->
+        </div>
+        <div class="cart-total">
+            <p>Total: <span id="cart-total-price">$0.00</span></p>
+            <a href="#" class="btn btn-primary">Checkout</a>
+        </div>
+    </div>
+    <div class="cart-overlay"></div>
+
+    <!-- Login Modal -->
+    <div class="login-modal">
+        <div class="modal-content">
+            <button class="close-modal"><i class="fas fa-times"></i></button>
+            <h2>Login to Your Account</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+            <p class="modal-footer">Don't have an account? <a href="#" id="signup-link">Sign up</a></p>
+        </div>
+    </div>
+    <div class="modal-overlay"></div>
+
+    <!-- Scripts -->
+    <script src="js/main.js" defer></script>
+    <script src="js/cart.js" defer></script>
+    <script src="js/search.js" defer></script>
+</body>
+</html>

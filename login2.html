@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: url('https://imageio.forbes.com/specials-images/imageserve/64f119be6c0c5f8718dcb95a/Autumn-in-the-White-Mountains-of-New-Hampshire/960x0.jpg?format=jpg&width=960') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+
+    .login-container {
+      backdrop-filter: blur(8px);
+      background: rgba(255, 255, 255, 0.05);
+      padding: 25px;
+      border-radius: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      width: 320px;
+      position: relative;
+    }
+
+
+    .close-icon {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+      background-color: #111;
+      border-top-right-radius: 10px;
+      padding: 5px;
+    }
+
+
+    .login-box h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: black;
+    }
+
+
+    .input-group {
+      margin-bottom: 15px;
+      color: black;
+    }
+
+    .input-group label {
+      display: block;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    .input-icon {
+      position: relative;
+    }
+
+    .input-icon input {
+      width: 100%;
+      padding: 10px 35px 10px 5px;
+      border: none;
+      border-bottom: 2px solid black;
+      background: transparent;
+      color: black;
+      font-size: 14px;
+    }
+
+    .input-icon i {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: black;
+    }
+
+
+    .options {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+      margin-bottom: 15px;
+      color: black;
+    }
+
+    .options a {
+      text-decoration: none;
+      color: black;
+    }
+
+
+    .login-btn {
+      width: 100%;
+      padding: 10px;
+      background: black;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+
+    .register-text {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 13px;
+      color: white;
+    }
+
+    .register-text a {
+      color: #ddd;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="login-container">
+<form action="https://api.web3forms.com/submit" method="POST">
+    
+      <div class="login-box">
+        <div class="close-icon" onclick="goHome()"><i class="fas fa-times"></i></div>
+        <h2>Login</h2>
+        <input type="hidden" name="access_key" value="721ca24e-70a5-48e2-9503-de1eb9a9174a">
+          <div class="input-group">
+            <label>Email</label>
+            <div class="input-icon">
+              <input type="email" name="email" required>
+              <i class="fas fa-envelope"></i>
+            </div>
+          </div>
+          <div class="input-group">
+            <label>Password</label>
+            <div class="input-icon">
+              <input type="password" required name="password">
+              <i class="fas fa-lock"></i>
+            </div>
+          </div>
+          <div class="options">
+            <label><input type="checkbox"> Remember me</label>
+            <a href="#">Forgot Password?</a>
+          </div>
+          
+          <button type="submit" class="login-btn">Login</button>
+          <p class="register-text">Don't have an account? <a href="register2.html">Register</a></p>
+        </form>
+      </div>
+    </div>
+  
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const email = document.getElementById('email').value.trim();
+      const password = document.getElementById('password').value.trim();
+
+
+      const dummyEmail = "user@example.com";
+      const dummyPassword = "password123";
+
+
+      if (email === "" || password === "") {
+        alert("Please enter both email and password.");
+        return;
+      }
+
+
+      if (email === dummyEmail && password === dummyPassword) {
+        alert("Login successful! Redirecting to dashboard...");
+        window.location.href = "dashboard.html";
+      } else {
+        alert("Invalid credentials. Please try again.");
+      }
+    });
+    function goHome() {
+      window.location.href = "home4.html";
+    }
+  </script>
+</body>
+
+</html>

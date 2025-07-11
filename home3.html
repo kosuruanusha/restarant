@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FantasyXI offers live casino, sports, and fantasy gaming. Join now for exclusive rewards.">
+  <meta name="keywords" content="casino, fantasy sports, betting, live games">
+  <meta name="robots" content="index, follow">
+  <link rel="icon" href="favicon.ico">
+  <title>FantasyXI - Home</title>
+  <link rel="stylesheet" href="home3.css">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+</head>
+
+<body>
+  <div id="progressBar"></div>
+  <header class="navbar">
+    <div class="logo animate__animated animate__fadeInLeft"><span>Fantasy</span>XI</div>
+    <div class="menu-toggle">
+      <i class="fas fa-bars" aria-label="Toggle navigation"></i>
+    </div>
+    <nav class="nav-links">
+      <a href="#" class="nav-link animate__animated animate__fadeIn" aria-label="Home">
+        <i class="fas fa-home"></i> Home
+      </a>
+      <div class="dropdown">
+        <a href="#" id="sportsToggle" class="drop-link animate__animated animate__fadeIn" aria-haspopup="true">
+          <i class="fas fa-running"></i> Sports <i class="fa fa-caret-down"></i>
+        </a>
+        <ul class="dropdown-content" id="sportsDropdown">
+          <li><a href="#"><i class="fas fa-baseball-ball"></i> Cricket</a></li>
+          <li><a href="#"><i class="fas fa-futbol"></i> Football</a></li>
+          <li><a href="#"><i class="fas fa-basketball-ball"></i> Basketball</a></li>
+          <li><a href="#"><i class="fas fa-hockey-puck"></i> Hockey</a></li>
+        </ul>
+      </div>
+      <div class="dropdown">
+        <a href="#" id="matchesToggle" class="drop-link animate__animated animate__fadeIn" aria-haspopup="true">
+          <i class="fas fa-tv"></i> Live Matches <i class="fa fa-caret-down"></i>
+        </a>
+        <ul class="dropdown-content" id="matchesDropdown">
+          <li><a href="#"><i class="far fa-calendar-alt"></i> Today's Matches</a></li>
+          <li><a href="#"><i class="fas fa-clock"></i> Upcoming</a></li>
+          <li><a href="#"><i class="fas fa-poll"></i> Results</a></li>
+          <li><a href="#"><i class="fas fa-play-circle"></i> Highlights</a></li>
+        </ul>
+      </div>
+      <a href="#" class="animate__animated animate__fadeIn">Color Trading</a>
+      <a href="#" class="animate__animated animate__fadeIn">Casino</a>
+      <a href="#" class="animate__animated animate__fadeIn">User Panel</a>
+    </nav>
+    <div class="icons">
+      <div class="dropdown">
+        <img src="wallet.webp" class="icon pulse" id="walletIcon" alt="Wallet Icon" loading="lazy">
+        <ul class="dropdown-content" id="walletDropdown">
+          <li><a href="#"><i class="fas fa-wallet"></i> Balance</a></li>
+          <li><a href="#"><i class="fas fa-money-bill-wave"></i> Deposit</a></li>
+          <li><a href="#"><i class="fas fa-hand-holding-usd"></i> Withdraw</a></li>
+        </ul>
+      </div>
+      <div class="dropdown">
+        <img src="profile.webp" class="icon" id="profileIcon" alt="User Icon">
+        <ul class="dropdown-content" id="profileDropdown">
+          <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+          <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+          <li><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+        </ul>
+      </div>
+      <button class="sign-in animate__animated animate__fadeIn" onclick='location.href="login.html"' aria-label="Sign In">
+        <i class="fas fa-sign-in-alt"></i> SIGN IN
+      </button>
+      <button class="register animate__animated animate__fadeIn" onclick='location.href="register.html"' aria-label="Register">
+        <i class="fas fa-user-plus"></i> REGISTER
+      </button>
+    </div>
+  </header>
+  <section class="hero">
+    <div class="hero-content">
+     <h1 id="typing-text">Play. Win. Repeat–The Ultimate Fantasy <br>& Casino Experience!</h1>
+      <p>Join, Play and start winning today.</p>
+      <button class="registerr">Register Now</button>
+      <a href="https://youtu.be/Rl9WticGSVk?si=nn8EwOxwLVlBURV7" class="start-link"><button class="start" loading="lazy">Start to
+          Game</button></a>
+    </div>
+    <div class="hero-image">
+      <img src="cricket.webp" alt="..." loading="lazy" width="600" height="400">
+
+    </div>
+  </section>
+
+  <section class="how-to-play">
+    <h2>How to Play & Win?</h2>
+    <p>Want to start winning? Follow these easy steps!</p>
+    <div class="steps-container">
+      <div class="step-card">
+        <i class="fas fa-download icon" aria-hidden="true"></i>
+        <h3>Register & Deposit</h3>
+        <p>Sign up and add funds securely to start betting.</p>
+      </div>
+      <div class="step-card">
+        <i class="fas fa-coins icon" aria-hidden="true"></i>
+        <h3>Choose a Match & Place a Bet</h3>
+        <p>Select a live match, analyze odds, and place your bet.</p>
+      </div>
+      <div class="step-card">
+        <i class="fas fa-money-check-alt icon" aria-hidden="true"></i>
+        <h3>Win & Withdraw Instantly</h3>
+        <p>Win big and withdraw your earnings instantly!</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="live-section">
+    <h2>LIVE Matches</h2>
+    
+    <div class="tabs">
+      <button class="tab active">Footballs</button>
+      <button class="tab">Cricket</button>
+      <div class="search-box">
+        <input type="text" placeholder="Search" aria-label="Search matches">
+      </div>
+    </div>
+
+    <div class="table-header">
+      <div class="col match active">Match</div>
+      <div class="col">Teams & Scores <i class="fa-solid fa-caret-down" aria-hidden="true"></i></div>
+      <div class="col">Betting Options <i class="fa-solid fa-caret-down" aria-hidden="true"></i></div>
+      <div class="col">Odds</div>
+      <div class="col">Place Bet</div>
+    </div>
+
+    <div class="match-row">
+      <div class="col yellow">🏏 Cricket (Live)</div>
+      <div class="col yellow">🏏 IND vs AUS</div>
+      <div class="col green">🟢 LIVE – IND 145/9<br>(16.2 ov) vs AUS</div>
+      <div class="col yellow">IND 🟢 1.85</div>
+      <div class="col"><button class="bet-btn">Bet Now</button></div>
+    </div>
+    <div class="match-row">
+      <div class="col yellow">🏏 Cricket (Live)</div>
+      <div class="col yellow">🏏 IND vs AUS</div>
+      <div class="col green">🟢 LIVE – IND 145/9<br>(16.2 ov) vs AUS</div>
+      <div class="col yellow">IND 🟢 1.85</div>
+      <div class="col"><button class="bet-btn">Bet Now</button></div>
+    </div>
+    <div class="match-row">
+      <div class="col yellow">🏏 Cricket (Live)</div>
+      <div class="col yellow">🏏 IND vs AUS</div>
+      <div class="col yellow">Match Winner</div>
+      <div class="col yellow">IND 🟢 1.85</div>
+      <div class="col"><button class="bet-btn">Bet Now</button></div>
+    </div>
+    <div class="match-row">
+      <div class="col yellow">⚽ Football (Live)</div>
+      <div class="col yellow">⚽ BRA vs ARG</div>
+      <div class="col yellow">Match Winner</div>
+      <div class="col yellow">IND 🟢 1.85</div>
+      <div class="col"><button class="bet-btn">Bet Now</button></div>
+    </div>
+    <div class="match-row">
+      <div class="col yellow">⚽ Football (Live)</div>
+      <div class="col yellow">⚽ BRA vs ARG</div>
+      <div class="col yellow">Match Winner</div>
+      <div class="col yellow">IND 🟢 1.85</div>
+      <div class="col"><button class="bet-btn">Bet Now</button></div>
+    </div>
+  </section>
+
+  <section class="why-choose">
+    <div class="left-circle">
+      <div class="circle-main">
+        <h3>WHY<br>CHOOSE<br>US?</h3>
+      </div>
+      <div class="icon-box top"><i class="fas fa-lock" aria-hidden="true"></i></div>
+      <div class="icon-box middle"><i class="fas fa-bolt" aria-hidden="true"></i></div>
+      <div class="icon-box bottom"><i class="fas fa-trophy" aria-hidden="true"></i></div>
+    </div>
+    <div class="right-text">
+      <p class="highlight">Experience the Best in Fantasy Sports & Casino!</p>
+      <p>Connect brings you the ultimate gaming experience combining fantasy sports betting, casino games, and real
+        rewards. Play smart, win big, and cash out instantly!</p>
+      <h4>Secure & Fair Gameplay</h4>
+      <p>We secure 100% fair play with advanced security features and encrypted data.</p>
+      <h4>Instant Withdrawals</h4>
+      <p>Win and withdraw your earnings instantly without delays.</p>
+    </div>
+  </section>
+ <footer class=footer>
+    <div class=footer-top>
+      <div class=footer-left>
+        <h2>FantasyXI</h2>
+        <p>
+          Are you looking for the best casino games and the biggest bonuses on the market?<br>
+          CasinoCompare is looking out for you. We have tried and tested most casinos on the Canadian market so you have
+          the choice of only the most trustworthy and fun places to bet your money.<br>
+          Keep up with our news and updates to make the most of your online casino experience!
+        </p>
+        <button class=support-btn>Support</button>
+      </div>
+      <div class=footer-links>
+        <div>
+          <h4>Information</h4>
+          <ul>
+            <li><a href=#>About</a></li>
+            <li><a href=#>Contact Us</a></li>
+            <li><a href=#>Pricing</a></li>
+            <li><a href=#>Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Popular pages</h4>
+          <ul>
+            <li><a href=#>Live Casino</a></li>
+            <li><a href=#>Game Shows</a></li>
+            <li><a href=#>No Bonus</a></li>
+            <li><a href=#>Casino Payment</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Popular casinos</h4>
+          <ul>
+            <li><a href=#>Live Casino</a></li>
+            <li><a href=#>Game Shows</a></li>
+            <li><a href=#>No Bonus</a></li>
+            <li><a href=#>Casino Payment</a></li>
+          </ul>
+        </div>
+        <div class=footer-social>
+          <h4>Follow Us-</h4>
+          <div class=social-icons>
+            <a href=https://www.youtube.com/ target=_blank><i class="fab fa-youtube"></i></a>
+            <a href=https://twitter.com/ target=_blank><i class="fab fa-twitter"></i></a>
+            <a href=https://facebook.com/ target=_blank><i class="fab fa-facebook"></i></a>
+          </div>
+          <h4>Subscribe Now</h4>
+          <div class=subscribe-box>
+            <input type=email placeholder="Enter your email">
+            <button><i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class=footer-bottom>
+      <p>
+        CasinoCompare.ca is owned by Game Lounge Ltd, a Maltese company with organization number: C53144 and is
+        completely independent of the gaming companies. Please note that third parties reserve the right to change or
+        remove bonuses / promotions at short notice. canadacasino.ca can therefore not be held responsible for any
+        incorrect information. Always read the terms and conditions of the bonus at each casino carefully before
+        playing.
+      </p>
+    </div>
+  </footer>
+  <script src="home3.js" defer></script>
+</body>
+
+</html>

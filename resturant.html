@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Delight | Fine Dining Experience</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="resturant.css">
+</head>
+<body>
+    <!-- Floating Reservation Button -->
+    <a href="#reservation" class="floating-reservation">
+        <i class="fas fa-calendar-alt"></i>
+        <span>Reserve Now</span>
+    </a>
+
+    <!-- Header with Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">MOTHERS'S <span>Delight</span></a>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-buttons">
+                    <a href="#" class="btn btn-reservation">Reservations</a>
+                    <div class="hamburger">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section with Video Background -->
+    <section class="hero" id="home">
+        <div class="video-background">
+            <video autoplay muted loop playsinline>
+                <source src="assets/videos/hero-background.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animated-text">Experience <span>Culinary</span> Excellence</h1>
+                <p class="subtitle">Authentic flavors crafted with passion and precision</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary btn-glow">
+                        <span>View Menu</span>
+                        <i class="fas fa-utensils"></i>
+                    </a>
+                    <a href="#reservation" class="btn btn-secondary btn-glow">
+                        <span>Book a Table</span>
+                        <i class="fas fa-calendar-check"></i>
+                    </a>
+                </div>
+                <div class="scroll-down">
+                    <span>Scroll Down</span>
+                    <div class="arrow-down"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers with Countdown -->
+    <section class="special-offers">
+        <div class="container">
+            <h2 class="section-title">Today's Specials</h2>
+            <div class="offer-countdown">
+                <span>Offer ends in:</span>
+                <div class="countdown-timer">
+                    <div class="countdown-box">
+                        <span id="hours">12</span>
+                        <span>Hours</span>
+                    </div>
+                    <div class="countdown-box">
+                        <span id="minutes">45</span>
+                        <span>Minutes</span>
+                    </div>
+                    <div class="countdown-box">
+                        <span id="seconds">30</span>
+                        <span>Seconds</span>
+                    </div>
+                </div>
+            </div>
+            <div class="offers-grid">
+                <div class="offer-card">
+                    <div class="offer-img" style="background-image: url('https://images.unsplash.com/photo-1544025162-d76694265947');">
+                        <div class="offer-badge">Chef's Choice</div>
+                    </div>
+                    <div class="offer-content">
+                        <h3>Truffle Pasta</h3>
+                        <p>Creamy pasta with black truffle and parmesan</p>
+                        <div class="price-container">
+                            <span class="price">$24.99</span>
+                            <span class="discount">$19.99</span>
+                        </div>
+                        <button class="btn btn-small">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- More offer cards would go here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Menu Section -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <h2 class="section-title">Our Menu</h2>
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-category="starters">
+                    <i class="fas fa-utensils"></i>
+                    <span>Starters</span>
+                </button>
+                <button class="tab-btn" data-category="mains">
+                    <i class="fas fa-drumstick-bite"></i>
+                    <span>Mains</span>
+                </button>
+                <button class="tab-btn" data-category="desserts">
+                    <i class="fas fa-ice-cream"></i>
+                    <span>Desserts</span>
+                </button>
+                <button class="tab-btn" data-category="drinks">
+                    <i class="fas fa-glass-martini-alt"></i>
+                    <span>Drinks</span>
+                </button>
+            </div>
+            
+            <div class="menu-category active" id="starters">
+                <div class="menu-item">
+                    <div class="item-image" style="background-image: url('https://images.unsplash.com/photo-1559847844-5315695dadae');"></div>
+                    <div class="item-info">
+                        <h3>Bruschetta</h3>
+                        <p>Toasted bread topped with tomatoes, garlic, and fresh basil</p>
+                        <div class="item-details">
+                            <span class="item-price">$8.99</span>
+                            <div class="item-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-small">Add to Order</button>
+                    </div>
+                </div>
+                <!-- More menu items would go here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section with Lightbox -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Our Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" style="background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4');" data-caption="Our elegant dining room">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <!-- More gallery items would go here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox">
+        <div class="lightbox-content">
+            <span class="close-lightbox">&times;</span>
+            <img src="" alt="" class="lightbox-image">
+            <div class="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <!-- About Section with Chef Skills -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Our Story</h2>
+                    <p>Founded in 2005, Gourmet Delight began as a small family-owned bistro with a passion for authentic flavors and exceptional service.</p>
+                    
+                    <div class="chef-skills">
+                        <h3>Chef's Specialties</h3>
+                        <div class="skill-item">
+                            <span>French Cuisine</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Molecular Gastronomy</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Pastry Arts</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="98%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary">Meet Our Team</a>
+                </div>
+                <div class="about-image">
+                    <div class="image-frame">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5" alt="Restaurant interior">
+                        <div class="experience-badge">
+                            <span>15+</span>
+                            <span>Years of Excellence</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Carousel -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Guests Say</h2>
+            <div class="swiper testimonials-carousel">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"The filet mignon was cooked to perfection, and the service was impeccable. Will definitely be returning!"</p>
+                            <div class="guest-info">
+                                <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Sarah Johnson">
+                                <div>
+                                    <h4>Sarah Johnson</h4>
+                                    <span>Food Critic</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- More testimonial slides would go here -->
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section class="reservation-section" id="reservation">
+        <div class="container">
+            <div class="reservation-content">
+                <div class="reservation-image">
+                    <div class="reservation-overlay">
+                        <h3>Private Dining Available</h3>
+                        <p>Perfect for special occasions and corporate events</p>
+                        <a href="#" class="btn btn-outline">Enquire Now</a>
+                    </div>
+                </div>
+                <div class="reservation-form">
+                    <h2>Make a Reservation</h2>
+                    <form id="booking-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="email" placeholder="Email Address" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" placeholder="Phone Number" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="date" placeholder="Date" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="time" placeholder="Time" required>
+                            </div>
+                            <div class="form-group">
+                                <select required>
+                                    <option value="" disabled selected>Guests</option>
+                                    <option value="1">1 Person</option>
+                                    <option value="2">2 People</option>
+                                    <option value="3-4">3-4 People</option>
+                                    <option value="5-6">5-6 People</option>
+                                    <option value="7+">7+ People</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Special Requests (Optional)"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Book Now</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Feed -->
+    <section class="instagram-feed">
+        <div class="container">
+            <h2 class="section-title">Follow Us <span>@GourmetDelight</span></h2>
+            <div class="instagram-grid">
+                <!-- Instagram posts would be loaded via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>MOTHER'S<span>Delight</span></h3>
+                    <p>Experience culinary excellence in the heart of the city. We pride ourselves on exceptional service and unforgettable flavors.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Gourmet Street, Foodville</li>
+                        <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@gourmetdelight.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Sat: 11am - 11pm, Sun: 10am - 9pm</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to receive updates on special events and offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Gourmet Delight. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="resturant.js"></script>
+</body>
+</html>
